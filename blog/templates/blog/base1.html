@@ -1,0 +1,61 @@
+{% load staticfiles %}
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bangladesh Bank</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="{% static 'css/css/tooplate_style.css' %}" rel="stylesheet" type="text/css" />
+<!--   Free Website Template by t o o p l a t e . c o m   -->
+</head>
+<body>
+
+<div id="tooplate_wrapper">
+	<div id="tooplate_header">
+        <div id="site_title"><h1><a href="#">Banglaesh Bank</a></h1></div>
+
+        
+        <div id="tooplate_menu">
+            <ul>
+               <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="{% url 'account_new' %}">New</a></li>
+                <li><a href="{% url 'deposit' %}">Deposit</a></li>
+                <li><a href="{% url 'widraw' %}">widraw</a></li>
+                <li><a href="{% url 'post_list' %}" class="last">Account</a></li>
+            </ul>    	
+        </div> <!-- end of tooplate_menu -->
+    
+	</div> <!-- end of forever header -->
+    
+    <div id="tooplate_main">
+		
+        <div id="tooplate_middle">
+        	<div class="mid_box">
+            	<h2>Mission</h2>
+
+                <p>Dutch-Bangla Bank engineers enterprise and creativity in business and commitment to social responsibility. </p>
+            </div>
+            <div class="mid_box">
+            	<h2>Vision</h2>
+                <p>Dutch-Bangla Bank dreams of better Bangladesh, sports and athletics, music and entertainment, science etc.</p>
+            </div>
+            <div class="main_box">
+				<div class="main_box_title"> <span>Dutch-Bangla Bank Anytime Anywhere Anytime Your Trusted Partner </span></div>
+     
+                <a class="learn_here" href="#">Learn Here</a>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+ <div style="margin-left:300px;"> {% block content %}
+            {% endblock %}
+    </div>
+        
+    <div id="tooplate_footer">
+    	Copyright © 2017 <a href="#">Dutch-Bangla</a>
+	</div> <!-- end of footer -->
+    
+</div> <!-- end of wrapper -->
+<!--   Free Website Template by t o o p l a t e . c o m   -->
+</body>
+</html>
